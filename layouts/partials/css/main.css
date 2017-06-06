@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('/~pfitzseb/fonts/Nexa Bold.otf');
+  src: url('{{ .Site.BaseURL }}fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
