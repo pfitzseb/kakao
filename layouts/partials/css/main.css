@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('/fonts/Nexa Bold.otf');
+  src: url('/~pfitzseb/fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -149,7 +149,7 @@ section.header .name {
   font-size: 28px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -182,7 +182,7 @@ section.header nav ul li {
   color: #555555;
   font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -269,7 +269,7 @@ section.main .content .page-heading {
   font-weight: 700;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -558,7 +558,7 @@ section.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
   color: #666666;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 section.main .content .markdown abbr[title] {
   cursor: help;
@@ -656,7 +656,7 @@ section.main .content .navigation a {
 
 /* Fonts */
 
-.wf-raleway-n4-active body, 
+.wf-raleway-n4-active body,
 .wf-raleway-n4-active section.header nav ul li,
 .wf-raleway-n7-active section.main .content .page-heading,
 .wf-raleway-n2-active section.main .container.f04 .content .num,
