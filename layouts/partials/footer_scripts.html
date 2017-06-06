@@ -18,6 +18,9 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+
 {{ template "_internal/google_analytics_async.html" . }}
 
 <script>
@@ -28,5 +31,9 @@
     {{ if .Site.Params.progressively }}
       progressively.init({delay: 30, throttle: 50});
     {{ end }}
+    renderMathInElement(document.body, {delimiters: [
+      {left: "\\begin{align}", right: "\\end{align}", display: true},
+      {left: "$", right: "$", display: false}
+    ]});
   };
 </script>
