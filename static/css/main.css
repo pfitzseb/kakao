@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('{{ .Site.BaseURL }}fonts/Nexa Bold.otf');
+  src: url('/~pfitzseb/fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -656,24 +656,24 @@ section.main .content .navigation a {
 
 /* Fonts */
 
-.wf-raleway-n4-active body,
-.wf-raleway-n4-active section.header nav ul li,
-.wf-raleway-n7-active section.main .content .page-heading,
-.wf-raleway-n2-active section.main .container.f04 .content .num,
-.wf-raleway-n7-active section.main .content .markdown h1,
-.wf-raleway-n7-active section.main .content .markdown h2,
-.wf-raleway-n7-active section.main .content .markdown h3,
-.wf-raleway-n7-active section.main .content .markdown h4,
-.wf-raleway-n7-active section.main .content .markdown h5,
-.wf-raleway-n7-active section.main .content .markdown h6 {
+body,
+section.header nav ul li,
+section.main .content .page-heading,
+section.main .container.f04 .content .num,
+section.main .content .markdown h1,
+section.main .content .markdown h2,
+section.main .content .markdown h3,
+section.main .content .markdown h4,
+section.main .content .markdown h5,
+section.main .content .markdown h6 {
   font-family: 'Raleway';
 }
 
-.wf-merriweather-n3-active section.main .content .markdown {
+section.main .content .markdown {
   font-family: 'Merriweather';
 }
 
-.wf-ubuntu-mono-n4-active section.main .content .markdown code,
-.wf-ubuntu-mono-n4-active section.main .content .markdown pre {
+section.main .content .markdown code,
+section.main .content .markdown pre {
   font-family: 'Ubuntu Mono';
 }
