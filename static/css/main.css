@@ -134,7 +134,7 @@ section.header .content {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  padding-left: 2em;
+  padding-left: 1.5em;
 }
 section.header .container .logo {
   max-width: 100px;
@@ -259,10 +259,9 @@ section.main .content .posts {
   margin-bottom: 4em;
 }
 section.main .content .page-heading {
-  font-size: 20px;
+  font-size: 1.8rem;
   font-weight: 700;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  letter-spacing: -0.005rem;
   /*text-transform: uppercase;*/
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
