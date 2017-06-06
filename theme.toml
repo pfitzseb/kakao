@@ -1,15 +1,14 @@
-name = "Cocoa-EH"
+name = "kakao"
 license = "MIT"
-licenselink = "https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md"
-description = "Cocoa Enhanced is a clean, fast and responsive theme with cool typography."
-homepage = "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
+licenselink = "https://github.com/pfitzseb/kakao/blob/master/LICENSE"
+homepage = "https://github.com/pfitzseb/kakao/"
 tags = ["clean", "fast", "responsive", "typography"]
 features = ["flexible", "fast", "highlights", "progressive images", "disqus"]
 min_version = 0.20.2
 
 [author]
-    name = "Alexis Tacnet"
-    homepage = "https://github.com/fuegowolf"
+    name = "Sebastian Pfitzner"
+    homepage = "https://github.com/pfitzseb"
 
 [original]
     name = "Nishanth Shanmugham"
