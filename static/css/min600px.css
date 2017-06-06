@@ -26,8 +26,11 @@ section.header .container .logo {
 margin: 0;
 }
 section.header-home .container .logo {
-max-width: 180px;
+max-width: 160px;
 margin-left: 20px;
+}
+section.header-home h1 {
+font-size: 45px;
 }
 section.header-home .name-home {
 padding-top: 30px;
