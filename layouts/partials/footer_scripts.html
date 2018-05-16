@@ -1,7 +1,7 @@
 {{ if .Site.Params.highlightjs }}
   <script src="{{ .Site.BaseURL }}js/highlight.min.js" defer></script>
   {{ range .Site.Params.highlightjslanguages }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{.}}.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{.}}.min.js" defer></script>
   {{ end }}
 {{ end }}
 
@@ -9,21 +9,23 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/contrib/auto-render.min.js" integrity="sha384-IiI65aU9ZYub2MY9zhtKd1H2ps7xxf+eb2YFG9lX6uRqpXCvBTOidPRCXCrQ++Uc" crossorigin="anonymous"></script>
 
 {{ template "_internal/google_analytics_async.html" . }}
 
 <script>
   window.onload = function() {
     {{ if .Site.Params.highlightjs }}
+      hljs.initHighlightingOnLoad();
       hljs.initHighlighting();
     {{ end }}
     {{ if .Site.Params.progressively }}
       progressively.init({delay: 30, throttle: 50});
     {{ end }}
     renderMathInElement(document.body, {delimiters: [
-      {left: "\\begin{align}", right: "\\end{align}", display: true},
+      {left: "\\[", right: "\\]", display: true},
       {left: "$", right: "$", display: false}
     ]});
   };

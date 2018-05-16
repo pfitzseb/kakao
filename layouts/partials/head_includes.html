@@ -6,21 +6,34 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
 
 <!-- Stylesheets -->
-<link media="screen" rel="stylesheet" href="/css/main.css">
-<link media="(min-width: 600px)" rel="stylesheet" href="/css/min600px.css">
-<link media="(min-width: 769px)" rel="stylesheet" href="/css/min769px.css">
+<style media="screen">
+  {{ partial "css/main.css" . | safeCSS }}
+</style>
+<style media="(min-width: 600px)">
+  {{ partial "css/min600px.css" . | safeCSS }}
+</style>
+<style media="(min-width: 769px)">
+  {{ partial "css/min769px.css" . | safeCSS }}
+</style>
+
 
 <!-- Optional CSS  -->
 {{ if .Site.Params.highlightjs }}
-    <link rel="stylesheet" href="/css/highlight.min.css">
+  <style type="text/css" media="screen">
+    {{ partial "css/highlight.min.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 {{ if .Site.Params.progressively }}
-    <link rel="stylesheet" href="/css/progressively.min.css">
+  <style type="text/css" media="screen">
+    {{ partial "css/progressively.min.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 {{ if .Site.Params.colors }}
-    <link rel="stylesheet" href="/css/colors.css">
+  <style type="text/css" media="screen">
+    {{ partial "css/colors.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 <!-- Icon -->
