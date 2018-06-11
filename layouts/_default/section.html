@@ -14,7 +14,7 @@
             {{ if ne (len (where .Data.Pages "Title" "!=" $globalTitle)) 0}}
                 <div class="page-heading">{{ .Title }}</div>
                 <ul>
-                    {{ range .Data.Pages.ByPublishDate }}
+                    {{ range .Data.Pages.ByDate.Reverse}}
                         {{ if ne .Title $globalTitle }}
                             {{ partial "li.html" . }}
                         {{ end }}

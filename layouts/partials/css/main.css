@@ -376,7 +376,9 @@ section.main .container .content .post-item .meta {
   font-size: 14px;
   color: #666666;
   display: none;
-  min-width: 100px;
+  width: 100px;
+  padding-right: 1em;
+  text-align: right;
 }
 section.main .container .content .see-more {
   font-style: italic;

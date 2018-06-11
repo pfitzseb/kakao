@@ -14,7 +14,7 @@
                 {{ if gt $nbPosts 0 }}
                     <div class="page-heading">Latest posts</div>
                     <ul>
-                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
+                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "asc" }}
                         <li class="groupby">{{ .Key }}</li>
                         {{ range .Pages.ByPublishDate }}
                             {{ partial "li.html" . }}
@@ -46,4 +46,3 @@
     </div>
 </section>
 {{ partial "footer.html" . }}
-
